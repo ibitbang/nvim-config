@@ -6,8 +6,8 @@ return {
     opts = {
       image = { enabled = true },
       picker = {
-        hidden = true,
-        ignored = true,
+        hidden = false,
+        ignored = false,
       },
     },
   },
