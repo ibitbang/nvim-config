@@ -5,7 +5,7 @@ return {
     opts = {
       diagnostics = {
         virtual_text = false,
-        signs = false,
+        -- signs = false,
       },
     },
   },
