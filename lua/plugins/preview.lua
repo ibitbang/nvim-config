@@ -20,5 +20,49 @@ return {
       event = "BufEnter",
       config = true, -- necessary as per https://github.com/rmagatti/goto-preview/issues/88
     },
+    keys = {
+      {
+        "gpd",
+        function()
+          require("goto-preview").goto_preview_definition()
+        end,
+        desc = "Preview Definition",
+      },
+      {
+        "gpt",
+        function()
+          require("goto-preview").goto_preview_type_definition()
+        end,
+        desc = "Preview Type Definition",
+      },
+      {
+        "gpi",
+        function()
+          require("goto-preview").goto_preview_implementation()
+        end,
+        desc = "Preview Implementation",
+      },
+      {
+        "gpD",
+        function()
+          require("goto-preview").goto_preview_declaration()
+        end,
+        desc = "Preview Declaration",
+      },
+      {
+        "gpr",
+        function()
+          require("goto-preview").goto_preview_references()
+        end,
+        desc = "Preview References",
+      },
+      {
+        "gP",
+        function()
+          require("goto-preview").close_all_win()
+        end,
+        desc = "Close All Previews",
+      },
+    },
   },
 }
